@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jachinma - Fullstack Alchemist</title>
+    <meta name="description" content="Turning syntax into style. Fullstack Alchemist in motion." />
+    <meta name="author" content="Jachinma" />
+
+    <meta property="og:title" content="Jachinma - Fullstack Alchemist" />
+    <meta property="og:description" content="Turning syntax into style. Fullstack Alchemist in motion." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: 'hsl(263, 70%, 50%)',
+              'primary-glow': 'hsl(263, 70%, 65%)',
+              background: 'hsl(240, 10%, 3.9%)',
+              foreground: 'hsl(0, 0%, 98%)',
+              muted: 'hsl(240, 5%, 64.9%)'
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.8s ease-out forwards',
+              'slide-up': 'slideUp 0.6s ease-out forwards',
+              'glow': 'glow 2s ease-in-out infinite alternate'
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' }
+              },
+              slideUp: {
+                '0%': { opacity: '0', transform: 'translateY(30px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' }
+              },
+              glow: {
+                '0%': { boxShadow: '0 10px 30px -10px hsl(263, 70%, 50%, 0.2)' },
+                '100%': { boxShadow: '0 0 40px hsl(263, 70%, 50%, 0.3)' }
+              }
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+
+  <body class="min-h-screen" style="background: linear-gradient(180deg, hsl(240, 10%, 3.9%), hsl(240, 10%, 8%)); background-attachment: fixed;">
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center relative overflow-hidden">
+      <!-- Background gradient overlay -->
+      <div class="absolute inset-0 bg-gradient-to-br from-purple-500/10 via-gray-900 to-purple-400/5"></div>
+      
+      <!-- Floating orbs for visual interest -->
+      <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-48 h-48 bg-purple-400/20 rounded-full blur-2xl animate-pulse" style="animation-delay: 1s;"></div>
+      
+      <!-- Hero Image -->
+      <div class="absolute inset-0 z-0">
+        <img 
+          src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1920&h=1080&q=80" 
+          alt="Technology background" 
+          class="w-full h-full object-cover opacity-20"
+        />
+      </div>
+      
+      <!-- Main hero content -->
+      <div class="relative z-10 text-center max-w-4xl mx-auto px-6">
+        <!-- Name/Title -->
+        <h1 class="text-6xl md:text-8xl font-bold bg-gradient-to-r from-white via-purple-400 to-white bg-clip-text text-transparent animate-fade-in mb-6 tracking-tight">
+          Jachinma
+        </h1>
+        
+        <!-- Headline/Subtitle -->
+        <p class="text-xl md:text-2xl text-gray-400 max-w-2xl mx-auto leading-relaxed animate-slide-up mb-8 font-light tracking-wide" style="animation-delay: 0.3s;">
+          Turning syntax into style. Fullstack Alchemist in motion.
+        </p>
+        
+        <!-- CTA Button -->
+        <div class="animate-slide-up" style="animation-delay: 0.6s;">
+          <button 
+            class="bg-white/10 text-white border border-white/20 hover:bg-white/20 text-lg px-8 py-4 rounded-xl animate-glow tracking-wide transition-all duration-300 transform hover:scale-105"
+            onclick="console.log('Explore collaboration');"
+          >
+            Explore & Collaborate
+          </button>
+        </div>
+        
+        <!-- Decorative element -->
+        <div class="mt-16 flex justify-center animate-fade-in" style="animation-delay: 1s;">
+          <div class="w-24 h-1 bg-gradient-to-r from-transparent via-purple-500 to-transparent"></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
